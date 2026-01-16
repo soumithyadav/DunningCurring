@@ -8,6 +8,6 @@ import java.util.List;
 
 public interface DunningRuleRepository extends JpaRepository<DunningRule, Long> {
 
-    List<DunningRule> findByActiveTrueOrderByOverdueDaysAsc();
+    List<DunningRule> findByActiveTrueOrderByOverdueDaysDesc();
 }
 

@@ -34,7 +34,7 @@ public class DunningScheduler {
     public void runDunningProcess() {
 
         List<TelecomService> services = serviceRepository.findAll();
-        List<DunningRule> rules = ruleRepository.findByActiveTrueOrderByOverdueDaysAsc();
+        List<DunningRule> rules = ruleRepository.findByActiveTrueOrderByOverdueDaysDesc();
 
         for (TelecomService service : services) {
 

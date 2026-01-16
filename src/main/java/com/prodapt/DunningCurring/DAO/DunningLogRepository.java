@@ -9,5 +9,6 @@ import java.util.List;
 public interface DunningLogRepository extends JpaRepository<DunningLog, Long> {
 
     List<DunningLog> findByServiceId(Long serviceId);
+    
 }
 
